@@ -23,3 +23,90 @@ img {
 	object-fit: cover;
 	width: 100%;
 }
+.form-row {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.d-flex {
+	display: flex;
+}
+label {
+	font-size: 1.6rem;
+	margin-bottom: 8px;
+}
+.form-row input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	/* max-width: 300px; */
+	color: darkblue;
+	font-size: 20px;
+}
+
+input::placeholder {
+	color: rebeccapurple;
+	font-size: 20px;
+}
+input {
+	outline: none;
+}
+.form-row.radio input {
+	accent-color: lightseagreen;
+}
+
+select {
+	padding: 10px;
+	outline: none;
+	border: 1px solid #ccc;
+	background: transparent;
+	border-radius: 10px;
+	/* max-width: 300px; */
+}
+
+textarea {
+	padding: 10px;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	resize: none;
+	/* max-width: 300px; */
+}
+
+input:required {
+	/* border: 1px solid red; */
+}
+
+.form-row:has(input:required) label::after {
+	content: "*";
+	color: red;
+}
+.form-row:has(input:required) label {
+	position: relative;
+	padding-bottom: 10px;
+}
+.form-row:has(input:required) label::before {
+	/* content: ""; */
+	width: 80%;
+	height: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: green;
+	display: block;
+}
+form {
+	max-width: 500px;
+	margin: 50px auto;
+}
+button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	background-color: lightseagreen;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	margin-top: 10px;
+}

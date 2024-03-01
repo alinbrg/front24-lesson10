@@ -43,5 +43,170 @@
 				</p>
 			</div>
 		</section>
+		<section class="form-elements">
+			<div class="container">
+				<form action="#">
+					<!-- <label for="user-name">
+						<span>Name:</span>
+						<input
+							type="text"
+							placeholder="enter your name"
+							id="user-name"
+							class="input"
+              disabled
+						/>
+					</label> -->
+					<div class="form-row">
+						<label for="user-name"> Name: </label>
+						<input
+							type="text"
+							placeholder="enter your name"
+							id="user-name"
+							class="input"
+							required
+							name="name"
+						/>
+					</div>
+
+					<div class="form-row">
+						<label for="user-email"> Email: </label>
+						<input
+							type="email"
+							placeholder="enter your email"
+							id="user-email"
+							class="input"
+							required
+							name="email"
+						/>
+					</div>
+
+					<div class="form-row">
+						<label for="user-password"> Password: </label>
+						<input
+							type="password"
+							placeholder="enter your password"
+							id="user-password"
+							class="input"
+							required
+							name="password"
+						/>
+					</div>
+
+					<div class="form-row">
+						<label for="user-number"> ID number: </label>
+						<input
+							type="number"
+							placeholder="enter your ID number"
+							id="user-number"
+							class="input"
+							required
+							name="number"
+						/>
+					</div>
+
+					<div class="form-row">
+						<label for="user-birthday"> birthday: </label>
+						<input
+							type="date"
+							placeholder="enter your birthday"
+							id="user-birthday"
+							class="input"
+							required
+							name="birthday"
+						/>
+					</div>
+					<div class="form-row">
+						<label for="user-delivery"> delivery time: </label>
+						<input
+							type="time"
+							placeholder="enter your delivery"
+							id="user-delivery"
+							class="input"
+							required
+							name="delivery"
+						/>
+					</div>
+
+					<div class="form-row">
+						<label for="user-color"> favorite color: </label>
+						<input
+							type="color"
+							placeholder="enter your favorite color"
+							id="user-color"
+							class="input"
+							name="color"
+							required
+						/>
+					</div>
+
+					<div class="form-row">
+						<label for="user-photo"> photo : </label>
+						<input
+							type="file"
+							placeholder="enter your photo"
+							id="user-photo"
+							class="input"
+							name="photo"
+							required
+						/>
+					</div>
+
+					<div class="form-row radio">
+						Gender
+						<div class="d-flex">
+							<div>
+								<input type="radio" value="male" id="male" name="gender" />
+								<label for="male">male</label>
+							</div>
+							<div>
+								<input type="radio" value="female" id="female" name="gender" />
+								<label for="female">female</label>
+							</div>
+							<div>
+								<input type="radio" value="other" id="other" name="gender" />
+								<label for="other">other</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-row radio">
+						<div>
+							<input type="checkbox" id="terms" name="terms" />
+							<label for="terms">terms</label>
+						</div>
+						<div>
+							<input type="checkbox" id="conditions" name="conditions" />
+							<label for="conditions">conditions</label>
+						</div>
+					</div>
+
+					<div class="form-row select">
+						<label for="user-country">Country:</label>
+						<select name="country" id="user-country">
+							<option value="0" selected disabled>select country</option>
+							<option value="romania">Romania</option>
+							<option value="germany">Germany</option>
+							<option value="france">France</option>
+							<option value="italy">Italy</option>
+							<option value="spain">Spain</option>
+						</select>
+					</div>
+
+					<div class="form-row">
+						<label for="user-message"> Message: </label>
+						<textarea
+							name="message"
+							id="user-message"
+							cols="30"
+							rows="10"
+							placeholder="enter your message"
+							required
+						></textarea>
+					</div>
+
+					<button type="submit">submit</button>
+				</form>
+			</div>
+		</section>
 	</body>
 </html>
